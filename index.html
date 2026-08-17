@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="用清楚的路徑認識台灣國中、高中現行升學制度與官方資源。">
+  <meta name="description" content="依台灣115學年度官方資料整理國中升高中職、五專，以及高中職升一般大學與科技校院的制度、資格與查核入口。">
   <meta name="theme-color" content="#153c35">
   <title>升學路徑圖｜台灣國高中升學制度指南</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +16,7 @@
   <header class="site-header">
     <a class="brand" href="#top" aria-label="升學路徑圖首頁"><span class="brand-mark">路</span><span>升學路徑圖</span></a>
     <nav aria-label="主要導覽">
-      <a href="#route">制度路徑</a><a href="#compare">管道比較</a><a href="#resources">官方資源</a>
+      <a href="#route">制度路徑</a><a href="#special">特殊進路</a><a href="#compare">管道比較</a><a href="#resources">官方資源</a>
     </nav>
     <button class="menu-button" type="button" aria-label="開啟選單" aria-expanded="false">選單</button>
   </header>
@@ -37,21 +37,25 @@
         <div class="map-node"><b>大專校院</b><small>選擇未來</small></div>
         <div class="compass">N<span>適性</span></div>
       </div>
-      <div class="hero-note">資料基準日：2026.08.15<br>實際招生以當年度簡章為準</div>
+      <div class="hero-note">資料基準日：2026.08.17<br>實際招生以最新簡章與公告為準</div>
     </section>
 
     <section class="notice-band" id="notice">
       <strong>先知道這件事</strong><p>民國 115 學年度就是西元 2026 年入學。制度有全國共同原則，但超額比序、招生名額、校系採計與日期會因就學區及年度而異；本站協助理解，不取代當年度招生簡章。</p>
     </section>
 
+    <section class="status-band" aria-label="115學年度最新狀態">
+      <span>115 學年度最新狀態</span><p><b>一般大學分發入學已於 8 月 17 日放榜。</b>分發結果複查至 8 月 20 日下午 5 時，後續仍以考分會公告為準。</p><a href="https://www.uac.edu.tw/" target="_blank" rel="noopener">前往考分會 ↗</a>
+    </section>
+
     <section class="section route-section" id="route">
       <div class="section-heading"><p class="eyebrow"><span></span> 找到你的階段</p><h2>你現在，站在哪裡？</h2><p>選擇目前階段，畫面只留下與你有關的資訊。</p></div>
       <div class="stage-switch" role="tablist" aria-label="選擇升學階段">
-        <button role="tab" aria-selected="true" data-stage="junior"><span>01</span> 國中升高中職／五專</button>
-        <button role="tab" aria-selected="false" data-stage="senior"><span>02</span> 高中職升大專校院</button>
+        <button id="junior-tab" role="tab" aria-selected="true" aria-controls="junior-panel" data-stage="junior"><span>01</span> 國中升高中職／五專</button>
+        <button id="senior-tab" role="tab" aria-selected="false" aria-controls="senior-panel" data-stage="senior"><span>02</span> 高中職升大專校院</button>
       </div>
 
-      <div class="stage-panel active" id="junior-panel" role="tabpanel">
+      <div class="stage-panel active" id="junior-panel" role="tabpanel" aria-labelledby="junior-tab">
         <div class="panel-intro"><div><p class="kicker">國九生的核心觀念</p><h3>會考重要，但不是唯一。</h3></div><p>高級中等學校多元入學以免試入學為主、特色招生為輔。免試的「免」是免另辦入學考試，不等於完全不採會考；報名超額時，依各就學區簡章所定項目比序。</p></div>
         <div class="timeline">
           <article><span>1</span><p class="time">國一至國三</p><h4>生涯探索與多元學習</h4><p>認識普通型、技術型、綜合型、單科型高中與五專差異，並依所屬就學區規則累積多元學習表現。</p></article>
@@ -60,26 +64,38 @@
           <article><span>4</span><p class="time">會考後</p><h4>選填志願與分發</h4><p>依志願、就學區比序與招生規則分發；錄取後務必依期限報到或放棄。</p></article>
         </div>
         <div class="path-grid">
-          <article class="path-card featured"><div class="tag">主流管道</div><h4>免試入學</h4><p>包含就學區免試、優先免試、直升、完全免試等。報名超額時啟動各區超額比序。</p><ul><li>適合依興趣、地區與志願選校</li><li>會考比重依法不得超過總積分三分之一</li></ul></article>
+          <article class="path-card featured"><div class="tag">主流管道</div><h4>高中職免試入學</h4><p>包含分區、優先、直升、技優甄審、學習區完全免試與部分單獨招生等。超額時依所屬就學區比序。</p><ul><li>就學區通常依畢業國中學籍，不是戶籍</li><li>共同就學區及跨區資格依簡章認定</li></ul></article>
           <article class="path-card"><div class="tag">專長導向</div><h4>特色招生</h4><p>分為甄選入學與考試分發入學，依術科、學科能力或專業群科需求招生。</p><ul><li>藝才、體育、科學、專業群科等</li><li>部分管道可跨就學區報名</li></ul></article>
-          <article class="path-card"><div class="tag">技職銜接</div><h4>五專入學</h4><p>五年一貫培育專業能力，有完全免試、優先免試及北中南區聯合免試等管道。</p><ul><li>完全免試不採會考，限選 1 校 1 科組</li><li>優先免試與聯合免試仍採計會考；規則不同</li></ul></article>
+          <article class="path-card"><div class="tag">技職銜接</div><h4>五專入學</h4><p>五年一貫培育專業能力，有完全免試、優先免試及北中南區聯合免試等管道。</p><ul><li>完全免試限應屆生，完全不採會考</li><li>優免與聯免未考會考也可報名，但相關比序不得分</li></ul></article>
         </div>
       </div>
 
-      <div class="stage-panel" id="senior-panel" role="tabpanel" hidden>
+      <div class="stage-panel" id="senior-panel" role="tabpanel" aria-labelledby="senior-tab" hidden>
         <div class="panel-intro"><div><p class="kicker">高中職生的核心觀念</p><h3>先分一般大學與科技校院，再選管道。</h3></div><p>一般大學主要有特殊選才、繁星推薦、申請入學與分發入學；科技校院則有特殊選才、科技繁星、技優、甄選、四技申請與聯合登記分發。兩套系統的資格、考試及時程不同。</p></div>
         <div class="timeline">
           <article><span>1</span><p class="time">高一至高二</p><h4>探索校系與累積學習</h4><p>修課紀錄、課程學習成果與多元表現可成為申請入學審查資料，重點是呈現真實學習脈絡。</p></article>
           <article><span>2</span><p class="time">高三上</p><h4>特殊選才／考科準備</h4><p>具特殊才能或經歷者可留意特殊選才；其餘考生依目標校系規劃英聽、學測或統測。</p></article>
           <article><span>3</span><p class="time">高三下</p><h4>甄選與申請</h4><p>一般大學進行繁星、申請入學；技專校院依身分與專長選擇技優、甄選或四技申請等。</p></article>
-          <article><span>4</span><p class="time">115 年 7–8 月</p><h4>分科／登記分發</h4><p>一般大學分科測驗因颱風延至 7 月 13–14 日、分發放榜順延至 8 月 17 日；四技二專聯合登記分發已於 8 月 6 日放榜。</p></article>
+          <article><span>4</span><p class="time">115 年 7–8 月</p><h4>分科／登記分發</h4><p>一般大學分科測驗因颱風延至 7 月 13–14 日，分發於 8 月 17 日放榜；四技二專聯合登記分發已於 8 月 6 日放榜。</p></article>
         </div>
         <div class="path-grid four">
           <article class="path-card"><div class="tag">校內推薦</div><h4>繁星推薦</h4><p>重視在校學業表現與校內相對排名，由高中推薦符合資格學生。</p></article>
           <article class="path-card featured"><div class="tag">多資料審查</div><h4>申請入學</h4><p>學測篩選後，依校系規定參加二階甄試與學習歷程資料審查。</p></article>
           <article class="path-card"><div class="tag">考科採計</div><h4>分發入學</h4><p>依校系採計的學測、分科測驗與術科等成績，登記志願後統一分發。</p></article>
-          <article class="path-card"><div class="tag">技職多元</div><h4>科技校院</h4><p>技高生常走甄選、技優或聯合登記分發；普通高中生可留意四技申請入學。資格與採計不能互換。</p></article>
+          <article class="path-card"><div class="tag">技職多元</div><h4>科技校院</h4><p>技高生常走甄選、技優或聯合登記分發；普通高中應屆生主要走四技申請，不能報名部分統測招生管道。</p></article>
         </div>
+      </div>
+    </section>
+
+    <section class="section special-section" id="special">
+      <div class="section-heading"><p class="eyebrow"><span></span> 不只主流管道</p><h2>有專長、特殊需求或明確職涯，也有其他入口。</h2><p>下列管道的資格與招生單位差異較大，務必直接讀專屬簡章。</p></div>
+      <div class="special-grid">
+        <article><span>國中端</span><h3>技優甄審／實用技能學程</h3><p>技藝技能優良學生可依區內規定參加技優甄審；實用技能學程以就業導向與技能學習為主，由輔導分發辦理。</p></article>
+        <article><span>國中端</span><h3>建教合作班</h3><p>結合學校課程與事業單位實習，招生、輪調方式及合作產業依各校核定計畫，不能與一般免試規則混為一談。</p></article>
+        <article><span>專長端</span><h3>藝才、體育、科學與專業群科</h3><p>可能採術科、甄選或專業測驗；招生區、資格、報名及放棄規定各自獨立。</p></article>
+        <article><span>大專端</span><h3>特殊選才／技優入學</h3><p>特殊經歷、競賽成果、乙級以上技術士證或專技證書等，可能適用不同管道；不是有證照就必然符合資格。</p></article>
+        <article><span>身分端</span><h3>特殊身分與其他招生</h3><p>身心障礙、原住民、離島、運動績優、軍警校院、境外學歷與同等學力，均須另查專屬規定及證明期限。</p></article>
+        <article class="scope-card"><span>本站範圍</span><h3>這是一張導航圖，不是個人資格判定書</h3><p>研究所、轉學考、學士後、境外招生及各校所有單獨招生未逐案展開；個案請洽招生單位或學校輔導室。</p></article>
       </div>
     </section>
 
@@ -87,9 +103,9 @@
       <div class="section-heading"><p class="eyebrow"><span></span> 容易搞混</p><h2>先釐清五個制度關鍵。</h2><p>真正影響權益的，通常不是考試本身，而是資格、志願與報到規則。</p></div>
       <div class="fact-grid">
         <article><b>01</b><h3>免試不等於不看會考</h3><p>高中職免試入學在超額時可採會考；各區項目與順序不同，必須查自己的就學區簡章。</p></article>
-        <article><b>02</b><h3>五專完免才完全不採會考</h3><p>115 學年度由國中集體報名，全國不分區，但只能選 1 所學校的 1 個科組。</p></article>
+        <article><b>02</b><h3>五專三種免試差很多</h3><p>完全免試不採會考且限應屆生；優免全國一區可填至多 30 志願；聯免可跨區、每區限報 1 校。</p></article>
         <article><b>03</b><h3>學習歷程不是件數競賽</h3><p>申請入學重視資料與校系的關聯及學習脈絡；中央資料庫無資料者，仍可依規定上傳 PDF。</p></article>
-        <article><b>04</b><h3>錄取後要注意資格互斥</h3><p>已完成報到者若想參加其他管道，常須在指定期限內聲明放棄；逾期可能喪失後續報名資格。</p></article>
+        <article><b>04</b><h3>不是放棄就一定能改走別條路</h3><p>有些管道可在期限前放棄後續報名，有些錄取限制即使放棄仍存在；必須逐一查該管道簡章。</p></article>
         <article><b>05</b><h3>非應屆與特殊身分先審資格</h3><p>個別報名、同等學力、特種生或境外學歷者，常有額外證明與審查期限，不能只看考試日期。</p></article>
       </div>
     </section>
@@ -101,11 +117,12 @@
     </section>
 
     <section class="section checklist-section">
-      <div class="section-heading"><p class="eyebrow"><span></span> 行動清單</p><h2>把複雜制度，變成四件事。</h2></div>
+      <div class="section-heading"><p class="eyebrow"><span></span> 行動清單</p><h2>把複雜制度，變成五件事。</h2></div>
       <div class="checklist">
         <label><input type="checkbox"><span><b>確認我的身分與就學區</b><small>應屆／非應屆、一般生／特殊身分、所在就學區</small></span></label>
         <label><input type="checkbox"><span><b>下載當年度招生簡章</b><small>資格、名額、比序、採計與日期都以簡章為準</small></span></label>
         <label><input type="checkbox"><span><b>建立自己的重要日期表</b><small>報名、繳費、甄試、選填、報到與放棄缺一不可</small></span></label>
+        <label><input type="checkbox"><span><b>逐一檢查管道互斥與放棄規定</b><small>不要假設完成放棄後，就一定可以參加下一個管道</small></span></label>
         <label><input type="checkbox"><span><b>和導師或輔導老師確認</b><small>跨區、特殊身分或多管道錄取更要個別確認</small></span></label>
       </div>
       <button class="reset-checks" type="button">清除勾選</button>
@@ -125,7 +142,7 @@
     </section>
   </main>
 
-  <footer><a class="brand" href="#top"><span class="brand-mark">路</span><span>升學路徑圖</span></a><p>為學生與家長整理的升學制度導讀。非政府官方網站，不蒐集個人資料。</p><p>制度整理基準：民國 115 學年度／更新日期 2026.08.15</p></footer>
+  <footer><a class="brand" href="#top"><span class="brand-mark">路</span><span>升學路徑圖</span></a><p>為學生與家長整理的升學制度導讀。非政府官方網站，不蒐集個人資料。</p><p>制度整理基準：民國 115 學年度／更新日期 2026.08.17</p></footer>
   <script src="script.js"></script>
 </body>
 </html>
